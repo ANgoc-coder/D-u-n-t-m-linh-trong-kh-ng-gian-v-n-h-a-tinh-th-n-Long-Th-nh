@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Dau An Tam Linh Long Thanh",
+  "description": "Giải mã, lưu giữ và tôn vinh những giá trị tâm linh, tín ngưỡng và nếp sống đạo đức tại đất Long Thành thế kỷ 21 thông qua lát cắt điền dã và nghiên cứu nhân học.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
