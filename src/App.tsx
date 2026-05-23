@@ -117,6 +117,53 @@ function SongPlayer({ slide, isEditMode, setEditingPhoto, setSelectedPhoto, onUp
     };
   }, [customTrack]);
 
+  // Autoplay on first user interaction to bypass modern browser blocks
+  useEffect(() => {
+    let playInitiated = false;
+    
+    const startAutoplay = () => {
+      if (playInitiated) return;
+      if (audioRef.current) {
+        audioRef.current.play()
+          .then(() => {
+            setIsPlaying(true);
+            playInitiated = true;
+            cleanup();
+          })
+          .catch(err => {
+            console.log("Autoplay block or delay, waiting for next user gesture:", err);
+          });
+      }
+    };
+
+    const cleanup = () => {
+      window.removeEventListener('click', startAutoplay);
+      window.removeEventListener('scroll', startAutoplay);
+      window.removeEventListener('keydown', startAutoplay);
+      window.removeEventListener('touchstart', startAutoplay);
+    };
+
+    window.addEventListener('click', startAutoplay);
+    window.addEventListener('scroll', startAutoplay);
+    window.addEventListener('keydown', startAutoplay);
+    window.addEventListener('touchstart', startAutoplay);
+
+    // Try starting immediately (if browser policy permits)
+    if (audioRef.current) {
+      audioRef.current.play()
+        .then(() => {
+          setIsPlaying(true);
+          playInitiated = true;
+          cleanup();
+        })
+        .catch(() => {
+          // Normal block, wait for interaction
+        });
+    }
+
+    return () => cleanup();
+  }, [track]);
+
   const handleAudioUpload = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
@@ -951,7 +998,7 @@ export default function App() {
                 sectionRefs.current[slide.id] = el;
               }}
               className="min-h-screen py-16 md:py-24 px-4 md:px-12 flex flex-col justify-center border-b border-[rgba(110,13,37,0.07)] relative overflow-hidden"
-              style={{ contentVisibility: 'auto' }}
+              style={{ contentVisibility: isSplitAudio ? 'visible' : 'auto' }}
             >
               
               {/* Subtle background calligraphy block or watermarks to increase expensive heritage feel */}

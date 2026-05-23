@@ -339,8 +339,8 @@
       {
         "key": "s11_bento_caudoi_06.jpg",
         "url": "/src/assets/images/regenerated_image_1779476166640.jpg",
-        "title": "Hình 25: Toàn cảnh mặt sau ngôi miếu.",
-        "description": "Người chụp: Thang Ánh Ngọc. Thời gian: 16/5/2026. Địa điểm: 40 Lý Thái Tông, Long Thành, Đồng Nai.",
+        "title": "Hình 25: Một vế câu đối trên cột đình.",
+        "description": "Người chụp: Ngô Phương Mai. Thời gian: 16/5/2026. Địa điểm: 40 Lý Thái Tông, Long Thành, Đồng Nai.",
         "aspectRatio": "4:5"
       }
     ]
@@ -452,16 +452,16 @@
       },
       {
         "key": "s14_additional_01.jpg",
-        "url": "https://images.unsplash.com/photo-1590073844006-33379778ae09?auto=format&fit=crop&w=800&q=80",
-        "title": "Hình 33: Khung chèn hình ảnh Bản Nguyện Ca",
-        "description": "Bấm vào Chế độ sửa ảnh để chèn hình ảnh thực tế điền dã của bạn.",
+        "url": "/src/assets/images/regenerated_image_1779545142534.jpg",
+        "title": "Hình 33: Các bản nguyện ca bên mái ngói thâm nghiêm.",
+        "description": "Người chụp: Thang Ánh Ngọc. Thời gian: 16/5/2026. Địa điểm: Tịnh xá Ngọc Uyển, Lê Duẩn, Long Thành, Đồng Nai.",
         "aspectRatio": "4:3"
       },
       {
         "key": "s14_additional_02.jpg",
-        "url": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80",
-        "title": "Hình 34: Khung chèn hình ảnh Lễ Cầu Siêu",
-        "description": "Bấm vào Chế độ sửa ảnh để chèn hình ảnh thực tế điền dã của bạn.",
+        "url": "/src/assets/images/regenerated_image_1779545146007.jpg",
+        "title": "Hình 34: Lễ cầu siêu xoa dịu tâm lý gia quyến.",
+        "description": "Người chụp: Thang Ánh Ngọc. Thời gian: 16/5/2026. Địa điểm: Tịnh xá Ngọc Uyển, Lê Duẩn, Long Thành, Đồng Nai.",
         "aspectRatio": "4:3"
       }
     ]
@@ -510,12 +510,12 @@
     "images": [
       {
         "key": "s16_song_cover.jpg",
-        "url": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
+        "url": "/src/assets/images/regenerated_image_1779545329972.jpg",
         "title": "Hình 37: Tác phẩm âm nhạc Dấu Chân Thực Địa",
         "description": "Nhật ký thu âm điền dã của nhóm sinh viên nghiên cứu văn hóa Long Thành, niên khóa 2026.",
         "aspectRatio": "3:4"
       }
     ],
-    "audioUrl": "https://assets.mixkit.co/music/preview/mixkit-traditional-oriental-meditation-101.mp3"
+    "audioUrl": "/src/assets/audio/dau_chan_thuc_dia.mp3"
   }
 ]
